@@ -1,0 +1,21 @@
+{
+  "name": "kubernetes",
+  "version": "1.0.0",
+  "description": "The docker image based on the project can be found in https://hub.docker.com/repository/docker/lauraleonilla/string-generator You can deploy it with kubernetes by running the following inside the folder:",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "eslint": "^7.14.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}

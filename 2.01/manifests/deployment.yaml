@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: string-writer-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: string-writer-app
+  template:
+    metadata:
+      labels:
+        app: string-writer-app
+    spec:
+      containers:
+        - name: pingpong
+          image: lauraleonilla/pingponghttp:latest
+        - name: string-reader
+          image: lauraleonilla/mainapplicationgethttp:latest
